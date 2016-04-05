@@ -1,24 +1,24 @@
 <html>
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-1.12.2.js"></script>
-  <script src="js/script.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.12.0.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Movie Tickets</title>
 </head>
 <body>
   <div class="container">
-    <form class="movies-ticket">
+    <form class="movie-ticket">
 
-      <label for="movies">Movies Selection</label>
-      <select id="movies" value="movies" class="form-control">
+      <label for="movie">Movies Selection</label>
+      <select id="movie" value="movie" class="form-control">
         <option value="starWars">Star Wars</option>
         <option value="nemo">Finding Nemo</option>
         <option value="mission">Mission Impossible</option>
       </select>
       <!--  --------------------->
-      <label for="times">Movies Times</label>
-      <select id="times" class="form-control">
+      <label for="time">Movies Times</label>
+      <select id="time" class="form-control">
         <option value="10am">10 am</option>
         <option value="1pm">1 pm</option>
         <option value="5pm">5 pm</option>
@@ -34,6 +34,19 @@
       <button type="submit" class="btn">Check Price</button>
       <!--  --------------------->
     </form>
+
+    <h2>Ticket Price</h2>
+    <ul id="price">
+    </ul>
+
+    <div id="ticket-info">
+      <h2></h2>
+
+      <p>Movie name: <span class="movie-name"></span></p>
+      <p>Movie time: <span class="movie-time"></span></p>
+      <p>Ticket price per person: <span class="ticket-price"></span></p>
+
+    </div>
     </div>
 </body>
 </html>
